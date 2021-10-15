@@ -33,7 +33,6 @@ Java_com_laotie_example_MainActivity_testQuote(JNIEnv *env, jobject /* this */) 
     LOGD("a:%d, *b:%d,  &b:%d, &a:%d, b:%d", a, *b, &b, &a, b);
     *b = 3;
     LOGD("a:%d, *b:%d,  &b:%d, &a:%d, b:%d", a, *b, &b, &a, b);
-
 }
 
 extern "C" JNIEXPORT void JNICALL
