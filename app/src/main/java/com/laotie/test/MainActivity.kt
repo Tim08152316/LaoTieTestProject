@@ -1,10 +1,9 @@
-package com.laotie.example
+package com.laotie.test
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.TextView
-import com.laotie.example.databinding.ActivityMainBinding
+import com.laotie.test.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,9 +27,8 @@ class MainActivity : AppCompatActivity() {
         testWaitLock()
     }
 
-
     /**
-     * A native method that is implemented by the 'example' native library,
+     * A native method that is implemented by the 'Test' native library,
      * which is packaged with this application.
      */
     private external fun stringFromJNI(): String
@@ -38,9 +36,9 @@ class MainActivity : AppCompatActivity() {
     private external fun testWaitLock()
 
     companion object {
-        // Used to load the 'example' library on application startup.
+        // Used to load the 'Test' library on application startup.
         init {
-            System.loadLibrary("example")
+            System.loadLibrary("Test")
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.laotie.example
+package com.laotie.test
 
 import org.junit.Test
 

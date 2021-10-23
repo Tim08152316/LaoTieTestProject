@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LaoTieTestProject</string>
+    <string name="app_name">LaoTieTest</string>
     <string name="testQuote">测试指针、引用</string>
     <string name="testLock">测试锁</string>
 </resources>

@@ -3,25 +3,16 @@
 #include "mtc_log.h"
 #include "TestLock.h"
 
-void swap(int &p1, int &p2) //此处函数的形参p1, p2都是引用
-{
-    int p;
-    p = p1;
-    p1 = p2;
-    p2 = p;
-}
-
-
 extern "C" JNIEXPORT jstring JNICALL
-Java_com_laotie_example_MainActivity_stringFromJNI(
-        JNIEnv *env,
+Java_com_laotie_test_MainActivity_stringFromJNI(
+        JNIEnv* env,
         jobject /* this */) {
     std::string hello = "Hello from C++";
     return env->NewStringUTF(hello.c_str());
 }
 
 extern "C" JNIEXPORT void JNICALL
-Java_com_laotie_example_MainActivity_testQuote(JNIEnv *env, jobject /* this */) {
+Java_com_laotie_test_MainActivity_testQuote(JNIEnv *env, jobject /* this */) {
 
     int  a = 1;
     int *b;
@@ -36,7 +27,7 @@ Java_com_laotie_example_MainActivity_testQuote(JNIEnv *env, jobject /* this */) 
 }
 
 extern "C" JNIEXPORT void JNICALL
-Java_com_laotie_example_MainActivity_testWaitLock(JNIEnv *env, jobject /* this */) {
+Java_com_laotie_test_MainActivity_testWaitLock(JNIEnv *env, jobject /* this */) {
 
     TestLock::getInstance().testWaitLock();
 }
