@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
 
     fun testQuoteClick(view: View) {
         testQuote()
-		Log.d("test","test")
     }
 
     fun testWaitLockClick(view: View) {
