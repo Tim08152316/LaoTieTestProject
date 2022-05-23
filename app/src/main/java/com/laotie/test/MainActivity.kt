@@ -22,10 +22,8 @@ class MainActivity : AppCompatActivity() {
         binding.sampleText.text = stringFromJNI()+"change on the remote main 002"
          binding.sampleText.text = stringFromJNI()+"change on the remote main 003"
         
-        
-        binding.sampleText.text = stringFromJNI()+"change on the local test branch 01---->"
-        binding.sampleText.text = stringFromJNI()+"change on the local test branch 02---->"
-
+        binding.sampleText.text = stringFromJNI()+"change on the local test branch ----01"
+        binding.sampleText.text = stringFromJNI()+"change on the local test branch ----02"
 
         binding.sampleText.text = stringFromJNI()+"change on the local test branch 03---->"
         binding.sampleText.text = stringFromJNI()+"change on the local test branch 04---->"
