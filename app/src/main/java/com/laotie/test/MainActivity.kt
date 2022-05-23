@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         // Example of a call to a native method
         binding.sampleText.text = stringFromJNI()
         binding.sampleText.text = stringFromJNI()+"test"
+        binding.sampleText.text = stringFromJNI()+"change on the remote main 001"
     }
 
     fun testQuoteClick(view: View) {
