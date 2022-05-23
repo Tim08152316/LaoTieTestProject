@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         binding.sampleText.text = stringFromJNI()
         binding.sampleText.text = stringFromJNI()+"test"
         binding.sampleText.text = stringFromJNI()+"change on the remote main 001"
+        binding.sampleText.text = stringFromJNI()+"change on the local test branch 01"
     }
 
     fun testQuoteClick(view: View) {
